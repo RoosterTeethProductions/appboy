@@ -4,8 +4,8 @@ module Appboy
       attr_reader :api_key, :audience, :broadcast, :canvas_id,
                   :canvas_entry_properties, :recipients
 
-      def initialize(app_group_id, options = {})
-        @api_key                 = app_group_id
+      def initialize(api_key, options = {})
+        @api_key                 = api_key
         @audience                = options[:audience]
         @broadcast               = options[:broadcast] || false
         @canvas_entry_properties = options[:canvas_entry_properties]
